@@ -2,9 +2,43 @@
 <html>
     <head>
         <script src="main.js"></script>
-        <link href="main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">    
     </head>
     <body>
-        <h1>Hello Engineers</h1>
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <table class="table is-fullwidth">
+                        <thead>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr />
+            <div class="columns">
+                <div class="column">
+                    <form id="entryForm">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="e.g Alex Smith">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                            </div>
+                        </div>
+                        <button class="button is-fullwidth is-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
