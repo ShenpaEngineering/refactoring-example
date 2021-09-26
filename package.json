@@ -2,8 +2,9 @@
 	"name": "typescript_starter",
 	"main": "server.js",
 	"scripts": {
-		"build": "node_modules/webpack-cli/bin/cli.js --watch=true",
-		"start": "node_modules/webpack-cli/bin/cli.js && node server.js"
+		"watch": "node_modules/webpack-cli/bin/cli.js --watch=true",
+		"start": "node server.js",
+		"test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
 	},
 	"dependencies": {
 		"axios": "^0.21.4",
@@ -12,8 +13,13 @@
 		"typescript": "^3.8.3"
 	},
 	"devDependencies": {
+		"@types/chai": "^4.2.22",
 		"@types/jquery": "^3.3.34",
+		"@types/mocha": "^9.0.0",
+		"chai": "^4.3.4",
+		"mocha": "^9.1.2",
 		"ts-loader": "^6.2.2",
+		"ts-node": "^10.2.1",
 		"webpack": "^4.42.1",
 		"webpack-cli": "^3.3.11"
 	}

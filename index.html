@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="oldway.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">    
     </head>
     <body>
@@ -12,9 +13,10 @@
                         <thead>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Action</th>
+                            <th>Status</th>
                         </thead>
                         <tbody>
+                            <tr></tr>
                         </tbody>
                     </table>
                 </div>
@@ -26,13 +28,13 @@
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="e.g Alex Smith">
+                                <input class="input" name="fullname" type="text" placeholder="e.g Alex Smith">
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control">
-                                <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                                <input class="input" name="email" type="email" placeholder="e.g. alexsmith@gmail.com">
                             </div>
                         </div>
                         <button class="button is-fullwidth is-primary">Submit</button>
@@ -40,5 +42,15 @@
                 </div>
             </div>
         </div>
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="modal-card">
+                    <section class="modal-card-body">
+                      Loading...
+                    </section>
+                  </div>
+            </div>
+          </div>
     </body>
 </html>
